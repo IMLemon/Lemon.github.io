@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Lemon WebPage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="#ForumHow to split and analysis a big file into mysql?
+##Content
+UserTable contains xxM .csv file and xxxxxx lines.
+Messages2010-2014 contains xG .csv file and xxxxxxxxx lines.
+Replies2010-2014 contai">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lemon WebPage">
+<meta property="og:url" content="http://sarojay.com/2016/03/05/Big Data Preprocess/index.html">
+<meta property="og:site_name" content="Lemon WebPage">
+<meta property="og:description" content="#ForumHow to split and analysis a big file into mysql?
+##Content
+UserTable contains xxM .csv file and xxxxxx lines.
+Messages2010-2014 contains xG .csv file and xxxxxxxxx lines.
+Replies2010-2014 contai">
+<meta property="og:image" content="http://img.blog.csdn.net/20160123163223831">
+<meta property="og:image" content="http://img.blog.csdn.net/20160123163710952">
+<meta property="og:image" content="http://img.blog.csdn.net/20160123163730547">
+<meta property="og:image" content="http://img.blog.csdn.net/20160123163744047">
+<meta property="og:updated_time" content="2016-03-05T12:36:31.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Lemon WebPage">
+<meta name="twitter:description" content="#ForumHow to split and analysis a big file into mysql?
+##Content
+UserTable contains xxM .csv file and xxxxxx lines.
+Messages2010-2014 contains xG .csv file and xxxxxxxxx lines.
+Replies2010-2014 contai">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20160123163223831">
+  
+    <link rel="alternative" href="/atom.xml" title="Lemon WebPage" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.jpg">
+  
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/me.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/">Mengqing Li</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">不会吃的程序媛不是一个好柠檬🍋</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=FHlxenNlfXpzOnh9VHJ7bHl1fXg6d3t5" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/IMLemon" title="github">github</a>
+                            
+                                <a class="fl facebook" target="_blank" href="https://www.facebook.com/sarah.li.56884" title="facebook">facebook</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        
+                    </div>
+                </section>
+                
+                
+                
+
+                
+                
+                <section class="switch-part switch-part3">
+                
+                    <div id="js-aboutme">90后天蝎座小女子一枚，爱编程，爱旅游，爱瑜伽，爱折腾，爱购物，爱美妆，爱萌宠，现求coding offer一张，男朋友一只🐶。</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Mengqing Li</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/me.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">Mengqing Li</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">不会吃的程序媛不是一个好柠檬🍋</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=FHlxenNlfXpzOnh9VHJ7bHl1fXg6d3t5" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/IMLemon" title="github">github</a>
+                    
+                        <a class="facebook" target="_blank" href="https://www.facebook.com/sarah.li.56884" title="facebook">facebook</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-Big Data Preprocess" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/05/Big Data Preprocess/" class="article-date">
+      <time datetime="2016-03-05T12:31:51.000Z" itemprop="datePublished">2016-03-05</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>#Forum<br>How to split and analysis a big file into mysql?</p>
+<p>##Content</p>
+<p><strong>UserTable</strong> contains xxM .csv file and xxxxxx lines.</p>
+<p><strong>Messages2010-2014</strong> contains xG .csv file and xxxxxxxxx lines.</p>
+<p><strong>Replies2010-2014</strong> contain seperately xx-xxG .csv files and over than approximately xx billion.<br><a id="more"></a></p>
+<p>##Process</p>
+<h3 id="Split-the-big-file"><a href="#Split-the-big-file" class="headerlink" title="Split the big file:"></a>Split the big file:</h3><p>Linux Environment</p>
+<p>Encoding:</p>
+<blockquote>
+<p>file –mime-encoding filename</p>
+<p>iconv -f utf-16le -t utf-8 filename1 &gt;filename2</p>
+</blockquote>
+<p>File cat and split:</p>
+<blockquote>
+<p>cat filename1 filename2 … filenamen &gt;new-filename</p>
+<p>split -l number -a prefixnumber filename</p>
+</blockquote>
+<p>###BufferReader:<br>JVM Environment</p>
+<p>The Java.io.BufferedReader class reads text from a character-input stream, buffering characters so as to provide for the efficient reading of characters, arrays, and lines.Following are the important points about BufferedReader:</p>
+<p><code>The buffer size may be specified, or the default size may be used.</code></p>
+<p><code>Each read request made of a Reader causes a corresponding read request to be made of the underlying character or byte stream.</code></p>
+<p>Declaration and Defination:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">BufferedReader bufferedReader = null;</span><br><span class="line">bufferedReader = new BufferedReader(new InputStreamReader(</span><br><span class="line">          new FileInputStream(filePath), &quot;UTF-8&quot;),</span><br><span class="line">                                 5 * 1024 * 1024);</span><br></pre></td></tr></table></figure>
+<hr>
+<p>###JDBC Connect MySQL</p>
+<p>MySQL provides connectivity for client applications developed in the Java programming language with MySQL Connector/J, a driver that implements the Java Database Connectivity (JDBC) API.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Driver driver = new com.mysql.jdbc.Driver();</span><br><span class="line">String url = &quot;jdbc:mysql://158.182.9.117:3306/slqname?characterEncoding=utf8&quot;;</span><br><span class="line">Properties info = new Properties();</span><br><span class="line">info.put(&quot;user&quot;, &quot;gaodeng&quot;);</span><br><span class="line">info.put(&quot;password&quot;, &quot;123&quot;);</span><br><span class="line">Connection conn = null;</span><br></pre></td></tr></table></figure>
+<p>“158.182.9.117”is the ip of remote computer as the server.In order to accelerate the transimission of each records,it is better to use “localhost”.</p>
+<p>IF there is an error or warning about SSL,we can add this “autoReconnect=true&amp;useSSL=false” in the url.</p>
+<p><em>Note:DO NOT FORGET BUILD PATH</em></p>
+<p>###Grant Privileges:<br>Linux Environment</p>
+<p>There are two main steps to grant MySQL remote login account:</p>
+<ol>
+<li>It is necessary to make sure of the firewall on the server which not prevent 3306 port.<br>MySQL default port is 3306, you need to determine the firewall does not block port 3306, otherwise it is impossible to connect to the remote MySQL port by 3306.<br>If you specified a different port when you install MySQL, please open your MySQL uses the port number specified in the firewall.<br>If you do not know how to set up a firewall on your server, ask your server administrator.</li>
+<li>Add to allow remote users to connect to MySQL and authorization.</li>
+</ol>
+<p>1) First,login the root MySQL account.<br>In Linux host, enter the following command at the command prompt.</p>
+<blockquote>
+<p>MySQL -uroot -p123</p>
+</blockquote>
+<p>2) Create a remote login and authorize</p>
+<blockquote>
+<p>Grant all PRIVILEGES on db to root@’123.123.123.123 ‘identified by ‘123’ with GRANT OPTION;</p>
+</blockquote>
+<p>The above statement indicates that all the privileges granted from db database to root, allowing the ip is 123.123.123.123, and set the user’s password is 123.</p>
+<p>After executing the above statement, and then execute the following statement, to take effect immediately.</p>
+<blockquote>
+<p>Flush privileges;</p>
+</blockquote>
+<p>###Access the database via MySQLWorkbench</p>
+<p>Configure the remote management:<br><img src="http://img.blog.csdn.net/20160123163223831" alt=""></p>
+<p>Hostname:The IP you want to remote.</p>
+<p>Username:When you grant the authorization on the server,you have set the username,likes root.</p>
+<p>Password:As described above.</p>
+<p>After test connection,access into the database “dbname”.</p>
+<hr>
+<p><strong>Analysis each records and split them into columns</strong></p>
+<p>Three types of records-users/messages/replies</p>
+<p>####Users:<br>There are 13 columns in users-table:</p>
+<table>
+<thead>
+<tr>
+<th>id_key</th>
+<th>nickname</th>
+<th>xxxxx</th>
+<th>xxxxx</th>
+<th>xxxxxx</th>
+<th>xxx </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>xxxxx_xxx</th>
+<th>xxxxx_xxx</th>
+<th>xxxxxxxx_xxxx</th>
+<th>xxx_xxxx</th>
+<th>xxxxx_xxx</th>
+<th>xxxx_xxxx</th>
+<th>xxxxx</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>One record is in line and “nickname” has two special symbols <code>&quot;&quot;++--++&quot;&quot;</code>, so firstly find the last index of <code>&quot;&quot;++--++&quot;&quot;</code>.</p>
+<p>Class:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public static int[] EachStr(String str1, String str2) &#123;</span><br><span class="line">		int[] index = new int[3];</span><br><span class="line">		int count = 0;</span><br><span class="line">		for (int z = 0; z &lt; str1.length() - str2.length(); z++) &#123;</span><br><span class="line">			if (str1.substring(z, z + str2.length()).equals(str2))</span><br><span class="line">				index[count++] = z;</span><br><span class="line">		&#125;</span><br><span class="line">		return index;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>Then seprate one line into 2 parts.One part contains id_key and nickanme(including the two special symbols<code>&quot;&quot;++--++&quot;&quot;</code>),and another part contains others columns(from country to gender).Split each part of them into 13 columns.</p>
+<p>Class:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">public static String[] Columns(String record) &#123;</span><br><span class="line">		String str1, str2;</span><br><span class="line">		String[] columns = new String[13];</span><br><span class="line">		int[] indexs = EachStr(record, SpecCode);</span><br><span class="line">		str1 = record.substring(0, indexs[1] + SpecCode.length());</span><br><span class="line">		str2 = record.substring(indexs[1] + SpecCode.length());</span><br><span class="line"></span><br><span class="line">		if (str1.substring(0, indexs[0] - 1).equals((str1.split(&quot;,&quot;)[0]))</span><br><span class="line">				&amp;&amp; (str2.split(&quot;,&quot;)).length == 12) &#123;</span><br><span class="line">			columns[0] = str1.substring(0, indexs[0] - 1);</span><br><span class="line">			columns[1] = str1.substring(indexs[0] + SpecCode.length(),</span><br><span class="line">					indexs[1]);</span><br><span class="line">			columns[2] = (str2.split(&quot;,&quot;))[1];</span><br><span class="line">			columns[3] = (str2.split(&quot;,&quot;))[2];</span><br><span class="line">			columns[4] = (str2.split(&quot;,&quot;))[3];</span><br><span class="line">			columns[5] = (str2.split(&quot;,&quot;))[4];</span><br><span class="line">			columns[6] = (str2.split(&quot;,&quot;))[5];</span><br><span class="line">			columns[7] = (str2.split(&quot;,&quot;))[6];</span><br><span class="line">			columns[8] = (str2.split(&quot;,&quot;))[7];</span><br><span class="line">			columns[9] = (str2.split(&quot;,&quot;))[8];</span><br><span class="line">			columns[10] = (str2.split(&quot;,&quot;))[9];</span><br><span class="line">			columns[11] = (str2.split(&quot;,&quot;))[10];</span><br><span class="line">			columns[12] = (str2.split(&quot;,&quot;))[11];</span><br><span class="line">		&#125; else</span><br><span class="line">			columns = null;</span><br><span class="line">		return columns;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>####Messages:<br>There are still 13 columns in messages-table:</p>
+<table>
+<thead>
+<tr>
+<th>messageid</th>
+<th>messagexxxxxx</th>
+<th>messagexxxxx</th>
+<th>messagexxxx</th>
+<th>messagexxxx</th>
+<th>lastpost </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>replies</th>
+<th>xxxxx_</th>
+<th>xxxxxx</th>
+<th>xxxx_xxxx</th>
+<th>xxxxx</th>
+<th>xxxxx_xxxx</th>
+<th>xxxxx_xxx</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Although it is similar with the user-table, there is a biggest difference between them.It is ONE record represented by ONE record in user-table while it is possible that several lines contain ONE record(We CAN NOT make sure that how many lines represent on record,maybe one ,two or more).So it is necessary that distinguish  one record and storage it into a virable <code>String</code>type,then split the virable.</p>
+<p>Another difference is the count of <code>&quot;&quot;++--++&quot;&quot;</code>.There are 6 special symbols in one record which used to distinguish the <code>messageauthor``messagetitle``messagebody</code>.Not only find the last index of the symbols,but also do find the each symbols and its index. </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public static int[] countStr(String str1, String str2) &#123;</span><br><span class="line">		int count = 0;</span><br><span class="line">		int location = 0;</span><br><span class="line">		for (int z = 0; z &lt;= str1.length() - str2.length(); z++) &#123;</span><br><span class="line">			if ((str1.substring(z, z + str2.length())).equals(str2)) &#123;</span><br><span class="line">				count++;</span><br><span class="line">				location = z + str2.length();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		int[] a = &#123; count, location &#125;;</span><br><span class="line">		return a;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p><code>str1</code>is the line and <code>str2</code>is the special symbol.<br>In order to seprate each columns,we can seprate one record into 2 parts.One part contains<code>messageid``messageauthor``messagetitle``messagebody</code> and storage in one string,another one contains the last 9 columns as well as storage in another string.And split them with<code>,</code>.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">public static String[] Columns(String record) &#123;</span><br><span class="line">		String str1, str2;</span><br><span class="line">		String[] columns = new String[13];</span><br><span class="line">		int[] indexs = EachStr(record, SpecCode);</span><br><span class="line">		str1 = record.substring(0, indexs[5] + SpecCode.length());</span><br><span class="line">		str2 = record.substring(indexs[5] + SpecCode.length());</span><br><span class="line"></span><br><span class="line">		if (str1.substring(0, indexs[0] - 1).equals((str1.split(&quot;,&quot;)[0]))</span><br><span class="line">				&amp;&amp; indexs[6] == 0 &amp;&amp; (str2.split(&quot;,&quot;)).length == 10) &#123;</span><br><span class="line">			columns[0] = str1.substring(0, indexs[0] - 1);</span><br><span class="line">			columns[1] = str1.substring(indexs[0] + SpecCode.length(),</span><br><span class="line">					indexs[1]);</span><br><span class="line">			columns[2] = str1.substring(indexs[2] + SpecCode.length(),</span><br><span class="line">					indexs[3]);</span><br><span class="line">			columns[3] = str1.substring(indexs[4] + SpecCode.length(),</span><br><span class="line">					indexs[5]);</span><br><span class="line">			columns[4] = (str2.split(&quot;,&quot;))[1];</span><br><span class="line">			columns[5] = (str2.split(&quot;,&quot;))[2];</span><br><span class="line">			columns[6] = (str2.split(&quot;,&quot;))[3];</span><br><span class="line">			columns[7] = (str2.split(&quot;,&quot;))[4];</span><br><span class="line">			columns[8] = (str2.split(&quot;,&quot;))[5];</span><br><span class="line">			columns[9] = (str2.split(&quot;,&quot;))[6];</span><br><span class="line">			columns[10] = (str2.split(&quot;,&quot;))[7];</span><br><span class="line">			columns[11] = (str2.split(&quot;,&quot;))[8];</span><br><span class="line">			columns[12] = (str2.split(&quot;,&quot;))[9];</span><br><span class="line">		&#125; else</span><br><span class="line">			columns = null;</span><br><span class="line">		return columns;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>####Replies:<br>There are only 8 columns in messages-table:</p>
+<table>
+<thead>
+<tr>
+<th>messagexxxx</th>
+<th>messagexxxx</th>
+<th>messagexxxx</th>
+<th>messagexxxx</th>
+<th>replyid</th>
+<th>replyxxxxx</th>
+<th>xxxxx</th>
+<th>xxxxxxx </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>It is same as the messages-table.</p>
+<hr>
+<p>###Check the foreign key and Insert Into the Table<br>Even if there is a function to constain the foreign key through establish the foreign key’s indexes in a table,after testing connection,if there are several foreign keys in one table,it would be very slow to insert one record because it need select all the primary key in another table.So we decided to use the method-insert first then check the foreign key.</p>
+<p>The code of checking foreign key:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">public static void checkFK(Connection conn, String fkstr, int fkid, int type)</span><br><span class="line">			throws SQLException &#123;</span><br><span class="line">		ResultSet rs = null;</span><br><span class="line"></span><br><span class="line">		String sql1s = &quot;select * from messages_2010_2014 where messageid=&apos;&quot;</span><br><span class="line">				+ fkid + &quot;&apos;&quot;;</span><br><span class="line">		String sql1i = &quot;insert into messages_2010_2014(messageid) values(?)&quot;;</span><br><span class="line">		String sql2s = &quot;select * from status where idstatus=&apos;&quot; + fkstr + &quot;&apos;&quot;;</span><br><span class="line">		String sql2i = &quot;insert into status(idstatus) values(?)&quot;;</span><br><span class="line">		String sql3s = &quot;select * from iuser_2010_2014 where id_key=&apos;&quot; + fkid</span><br><span class="line">				+ &quot;&apos;&quot;;</span><br><span class="line">		String sql3i = &quot;insert into iuser_2010_2014(id_key) values(?)&quot;;</span><br><span class="line"></span><br><span class="line">		Statement stmt = (Statement) conn.createStatement();</span><br><span class="line">		try &#123;</span><br><span class="line">			switch (type) &#123;</span><br><span class="line">			case 0:</span><br><span class="line">				rs = stmt.executeQuery(sql1s);</span><br><span class="line">				if (!rs.next()) &#123;</span><br><span class="line">					PreparedStatement pstmt = conn.prepareStatement(sql1i);</span><br><span class="line">					pstmt.setInt(1, fkid);</span><br><span class="line">					pstmt.executeUpdate();</span><br><span class="line">				&#125;</span><br><span class="line">				break;</span><br><span class="line">			case 1:</span><br><span class="line">				rs = stmt.executeQuery(sql2s);</span><br><span class="line">				if (!rs.next()) &#123;</span><br><span class="line">					PreparedStatement pstmt = conn.prepareStatement(sql2i);</span><br><span class="line">					pstmt.setString(1, fkstr);</span><br><span class="line">					pstmt.executeUpdate();</span><br><span class="line">				&#125;</span><br><span class="line">				break;</span><br><span class="line">			case 2:</span><br><span class="line">				rs = stmt.executeQuery(sql3s);</span><br><span class="line">				if (!rs.next()) &#123;</span><br><span class="line">					PreparedStatement pstmt = conn.prepareStatement(sql3i);</span><br><span class="line">					pstmt.setInt(1, fkid);</span><br><span class="line">					pstmt.executeUpdate();</span><br><span class="line">				&#125;</span><br><span class="line">				break;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; catch (SQLException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">``` </span><br><span class="line">The function of type is to select to check which foreign key.If there is no record in referenced table,it would insert the new record into the referenced table.</span><br><span class="line"></span><br><span class="line">The code of inserting into table :</span><br></pre></td></tr></table></figure>
+<p>public static void InsertSQL(Connection conn, String[] columns)<br>            throws SQLException {<br>        try {<br>            PreparedStatement pstmt = conn<br>                    .prepareStatement(“insert into replies_2011(x,x,x,x,x,x,x,x) values (?,?,?,?,?,?,?,?)”);<br>            pstmt.setString(1, columns[0]);<br>            pstmt.setString(2, columns[1]);<br>            pstmt.setString(3, columns[2]);<br>            pstmt.setString(4, columns[3]);<br>            if (!Strtoint(columns[4]))<br>                columns[4] = columns[4].substring(1);<br>            pstmt.setInt(5, Integer.parseInt(columns[4]));<br>            pstmt.setInt(6, Integer.parseInt(columns[5]));<br>            pstmt.setString(7, columns[6]);<br>            pstmt.setInt(8, Integer.parseInt(columns[7]));<br>            pstmt.executeUpdate();<br>        } catch (SQLException e) {<br>            e.printStackTrace();<br>        }<br>    }<br><code>``
+If the datatype of columns are</code>int<code>or other type(without</code>String<code>),it would be parse into</code>Integer`.</p>
+<p>##Configure the Developing Environment</p>
+<p>###MyEclipse<br>MyEclipse is a commercially available Java EE and Ajax IDE created and maintained by the company Genuitec, a founding member of the Eclipse Foundation.MyEclipse is built upon the Eclipse platform and integrates both proprietary and open source code[2] into the development environment. </p>
+<p>Download Link:<a href="">https://www.genuitec.com/products/myeclipse/download/</a> </p>
+<p><img src="http://img.blog.csdn.net/20160123163710952" alt=""></p>
+<p><em>NOTE:THERE ARE ONLY 30 DAYS TO TRAIL</em>—–DO NOT WORRY,we can use RI to break it.</p>
+<ol>
+<li><p>Set the encoding of Myeclispe.</p>
+<p> 1)The entire project is set encoding UTF-8 (UTF-8 can be the greatest support internationalization)</p>
+<p> windows-&gt; Preferences-&gt; general-&gt; Workspace-&gt; Text file encoding-&gt; Other box Text file encoding to UTF-8.</p>
+<p> 2)For java source file encoding to UTF-8</p>
+<p>   windows-&gt; Preferences-&gt; general-&gt; Context Types-&gt; Text, select Java Source File, in the following input box Default encoding UTF-8, point Update, is set Java file encoding to UTF-8.</p>
+</li>
+<li><p>Run configures:<br>Because the max of JVM is approximately 1/4 RAM,so in order to increase the JVM,it is necessary to set the arguments that avoid the out of<code>JAVA heapsize</code>.<br><img src="http://img.blog.csdn.net/20160123163730547" alt=""></p>
+</li>
+</ol>
+<p>###MySQL<br>MySQL Community Edition is a freely downloadable version of the world’s most popular open source database that is supported by an active community of open source developers and enthusiasts.MySQL Cluster Community Edition is available as a separate download. The reason for this change is so that MySQL Cluster can provide more frequent updates and support using the latest sources of MySQL Cluster Carrier Grade Edition.</p>
+<p>Download Link:<a href="">http://dev.mysql.com/downloads/mysql/</a></p>
+<p><img src="http://img.blog.csdn.net/20160123163744047" alt=""></p>
+<p><em>NOTE:When you first install mysql,please remember the password.</em></p>
+<p>###MySQLWorkbench<br>MySQL Workbench provides DBAs and developers an integrated tools environment for:</p>
+<p>Database Design &amp; Modeling</p>
+<p>SQL Development</p>
+<p>Database Administration</p>
+<p>Database Migration</p>
+<p>The Community (OSS) Edition is available from this page under the GPL.</p>
+<p>Download Link:<a href="">http://dev.mysql.com/downloads/workbench/</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/03/05/Big Data Preprocess/"></a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 Mengqing Li 的个人博客">Mengqing Li</a></p>
+        <p><span>发布时间:</span>2016年03月05日 - 20时31分</p>
+        <p><span>最后更新:</span>2016年03月05日 - 20时36分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/03/05/Big Data Preprocess/" title="">http://sarojay.com/2016/03/05/Big Data Preprocess/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://sarojay.com/2016/03/05/Big Data Preprocess/　　作者: Mengqing Li" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2015/12/07/eventrgs/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Split-the-big-file"><span class="toc-number">1.</span> <span class="toc-text">Split the big file:</span></a></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/03/05/Big Data Preprocess/" data-title="" data-url="http://sarojay.com/2016/03/05/Big Data Preprocess/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"luums"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2015/12/07/eventrgs/" title="下一篇: ">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/03/05/Big Data Preprocess/">Big Data Preprocess</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/07/eventrgs/">eventrgs</a></li></ul>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2016 Mengqing Li
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >本站到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 21;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+  </div>
+</body>
+</html>
