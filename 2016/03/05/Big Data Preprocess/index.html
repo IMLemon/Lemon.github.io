@@ -5,32 +5,29 @@
   
   <title>Lemon WebPage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#ForumHow to split and analysis a big file into mysql?
-##Content
-UserTable contains xxM .csv file and xxxxxx lines.
+  <meta name="description" content="ForumHow to split and analysis a big file into mysql?
+ContentUserTable contains xxM .csv file and xxxxxx lines.
 Messages2010-2014 contains xG .csv file and xxxxxxxxx lines.
-Replies2010-2014 contai">
+Replies2010-2014 contain se">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Lemon WebPage">
 <meta property="og:url" content="http://sarojay.com/2016/03/05/Big Data Preprocess/index.html">
 <meta property="og:site_name" content="Lemon WebPage">
-<meta property="og:description" content="#ForumHow to split and analysis a big file into mysql?
-##Content
-UserTable contains xxM .csv file and xxxxxx lines.
+<meta property="og:description" content="ForumHow to split and analysis a big file into mysql?
+ContentUserTable contains xxM .csv file and xxxxxx lines.
 Messages2010-2014 contains xG .csv file and xxxxxxxxx lines.
-Replies2010-2014 contai">
+Replies2010-2014 contain se">
 <meta property="og:image" content="http://img.blog.csdn.net/20160123163223831">
 <meta property="og:image" content="http://img.blog.csdn.net/20160123163710952">
 <meta property="og:image" content="http://img.blog.csdn.net/20160123163730547">
 <meta property="og:image" content="http://img.blog.csdn.net/20160123163744047">
-<meta property="og:updated_time" content="2016-03-05T12:36:31.000Z">
+<meta property="og:updated_time" content="2016-03-20T08:38:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Lemon WebPage">
-<meta name="twitter:description" content="#ForumHow to split and analysis a big file into mysql?
-##Content
-UserTable contains xxM .csv file and xxxxxx lines.
+<meta name="twitter:description" content="ForumHow to split and analysis a big file into mysql?
+ContentUserTable contains xxM .csv file and xxxxxx lines.
 Messages2010-2014 contains xG .csv file and xxxxxxxxx lines.
-Replies2010-2014 contai">
+Replies2010-2014 contain se">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20160123163223831">
   
     <link rel="alternative" href="/atom.xml" title="Lemon WebPage" type="application/atom+xml">
@@ -158,7 +155,7 @@ Replies2010-2014 contai">
                 
                 <section class="switch-part switch-part3">
                 
-                    <div id="js-aboutme">90后天蝎座小女子一枚，爱编程，爱旅游，爱瑜伽，爱折腾，爱购物，爱美妆，爱萌宠，现求coding offer一张，男朋友一只🐶。</div>
+                    <div id="js-aboutme">90后天蝎座小女子一枚，爱编程，爱旅游，爱瑜伽，爱折腾，爱购物，爱美妆，爱萌宠，现求coding offer一张。</div>
                 </section>
                 
             </div>
@@ -225,13 +222,11 @@ Replies2010-2014 contai">
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>#Forum<br>How to split and analysis a big file into mysql?</p>
-<p>##Content</p>
-<p><strong>UserTable</strong> contains xxM .csv file and xxxxxx lines.</p>
+        <h1 id="Forum"><a href="#Forum" class="headerlink" title="Forum"></a>Forum</h1><p>How to split and analysis a big file into mysql?</p>
+<h2 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h2><p><strong>UserTable</strong> contains xxM .csv file and xxxxxx lines.</p>
 <p><strong>Messages2010-2014</strong> contains xG .csv file and xxxxxxxxx lines.</p>
 <p><strong>Replies2010-2014</strong> contain seperately xx-xxG .csv files and over than approximately xx billion.<br><a id="more"></a></p>
-<p>##Process</p>
-<h3 id="Split-the-big-file"><a href="#Split-the-big-file" class="headerlink" title="Split the big file:"></a>Split the big file:</h3><p>Linux Environment</p>
+<h3 id="Process"><a href="#Process" class="headerlink" title="Process"></a>Process</h3><h4 id="Split-the-big-file"><a href="#Split-the-big-file" class="headerlink" title="Split the big file:"></a>Split the big file:</h4><p>Linux Environment</p>
 <p>Encoding:</p>
 <blockquote>
 <p>file –mime-encoding filename</p>
@@ -242,20 +237,19 @@ Replies2010-2014 contai">
 <p>cat filename1 filename2 … filenamen &gt;new-filename</p>
 <p>split -l number -a prefixnumber filename</p>
 </blockquote>
-<p>###BufferReader:<br>JVM Environment</p>
+<h4 id="BufferReader"><a href="#BufferReader" class="headerlink" title="BufferReader:"></a>BufferReader:</h4><p>JVM Environment</p>
 <p>The Java.io.BufferedReader class reads text from a character-input stream, buffering characters so as to provide for the efficient reading of characters, arrays, and lines.Following are the important points about BufferedReader:</p>
 <p><code>The buffer size may be specified, or the default size may be used.</code></p>
 <p><code>Each read request made of a Reader causes a corresponding read request to be made of the underlying character or byte stream.</code></p>
 <p>Declaration and Defination:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">BufferedReader bufferedReader = null;</span><br><span class="line">bufferedReader = new BufferedReader(new InputStreamReader(</span><br><span class="line">          new FileInputStream(filePath), &quot;UTF-8&quot;),</span><br><span class="line">                                 5 * 1024 * 1024);</span><br></pre></td></tr></table></figure>
 <hr>
-<p>###JDBC Connect MySQL</p>
-<p>MySQL provides connectivity for client applications developed in the Java programming language with MySQL Connector/J, a driver that implements the Java Database Connectivity (JDBC) API.</p>
+<h4 id="JDBC-Connect-MySQL"><a href="#JDBC-Connect-MySQL" class="headerlink" title="JDBC Connect MySQL"></a>JDBC Connect MySQL</h4><p>MySQL provides connectivity for client applications developed in the Java programming language with MySQL Connector/J, a driver that implements the Java Database Connectivity (JDBC) API.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Driver driver = new com.mysql.jdbc.Driver();</span><br><span class="line">String url = &quot;jdbc:mysql://158.182.9.117:3306/slqname?characterEncoding=utf8&quot;;</span><br><span class="line">Properties info = new Properties();</span><br><span class="line">info.put(&quot;user&quot;, &quot;gaodeng&quot;);</span><br><span class="line">info.put(&quot;password&quot;, &quot;123&quot;);</span><br><span class="line">Connection conn = null;</span><br></pre></td></tr></table></figure>
 <p>“158.182.9.117”is the ip of remote computer as the server.In order to accelerate the transimission of each records,it is better to use “localhost”.</p>
 <p>IF there is an error or warning about SSL,we can add this “autoReconnect=true&amp;useSSL=false” in the url.</p>
 <p><em>Note:DO NOT FORGET BUILD PATH</em></p>
-<p>###Grant Privileges:<br>Linux Environment</p>
+<h4 id="Grant-Privileges"><a href="#Grant-Privileges" class="headerlink" title="Grant Privileges:"></a>Grant Privileges:</h4><p>Linux Environment</p>
 <p>There are two main steps to grant MySQL remote login account:</p>
 <ol>
 <li>It is necessary to make sure of the firewall on the server which not prevent 3306 port.<br>MySQL default port is 3306, you need to determine the firewall does not block port 3306, otherwise it is impossible to connect to the remote MySQL port by 3306.<br>If you specified a different port when you install MySQL, please open your MySQL uses the port number specified in the firewall.<br>If you do not know how to set up a firewall on your server, ask your server administrator.</li>
@@ -274,8 +268,7 @@ Replies2010-2014 contai">
 <blockquote>
 <p>Flush privileges;</p>
 </blockquote>
-<p>###Access the database via MySQLWorkbench</p>
-<p>Configure the remote management:<br><img src="http://img.blog.csdn.net/20160123163223831" alt=""></p>
+<h3 id="Access-the-database-via-MySQLWorkbench"><a href="#Access-the-database-via-MySQLWorkbench" class="headerlink" title="Access the database via MySQLWorkbench"></a>Access the database via MySQLWorkbench</h3><p>Configure the remote management:<br><img src="http://img.blog.csdn.net/20160123163223831" alt=""></p>
 <p>Hostname:The IP you want to remote.</p>
 <p>Username:When you grant the authorization on the server,you have set the username,likes root.</p>
 <p>Password:As described above.</p>
@@ -283,7 +276,7 @@ Replies2010-2014 contai">
 <hr>
 <p><strong>Analysis each records and split them into columns</strong></p>
 <p>Three types of records-users/messages/replies</p>
-<p>####Users:<br>There are 13 columns in users-table:</p>
+<h4 id="Users"><a href="#Users" class="headerlink" title="Users:"></a>Users:</h4><p>There are 13 columns in users-table:</p>
 <table>
 <thead>
 <tr>
@@ -325,7 +318,7 @@ Replies2010-2014 contai">
 <p>Then seprate one line into 2 parts.One part contains id_key and nickanme(including the two special symbols<code>&quot;&quot;++--++&quot;&quot;</code>),and another part contains others columns(from country to gender).Split each part of them into 13 columns.</p>
 <p>Class:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">public static String[] Columns(String record) &#123;</span><br><span class="line">		String str1, str2;</span><br><span class="line">		String[] columns = new String[13];</span><br><span class="line">		int[] indexs = EachStr(record, SpecCode);</span><br><span class="line">		str1 = record.substring(0, indexs[1] + SpecCode.length());</span><br><span class="line">		str2 = record.substring(indexs[1] + SpecCode.length());</span><br><span class="line"></span><br><span class="line">		if (str1.substring(0, indexs[0] - 1).equals((str1.split(&quot;,&quot;)[0]))</span><br><span class="line">				&amp;&amp; (str2.split(&quot;,&quot;)).length == 12) &#123;</span><br><span class="line">			columns[0] = str1.substring(0, indexs[0] - 1);</span><br><span class="line">			columns[1] = str1.substring(indexs[0] + SpecCode.length(),</span><br><span class="line">					indexs[1]);</span><br><span class="line">			columns[2] = (str2.split(&quot;,&quot;))[1];</span><br><span class="line">			columns[3] = (str2.split(&quot;,&quot;))[2];</span><br><span class="line">			columns[4] = (str2.split(&quot;,&quot;))[3];</span><br><span class="line">			columns[5] = (str2.split(&quot;,&quot;))[4];</span><br><span class="line">			columns[6] = (str2.split(&quot;,&quot;))[5];</span><br><span class="line">			columns[7] = (str2.split(&quot;,&quot;))[6];</span><br><span class="line">			columns[8] = (str2.split(&quot;,&quot;))[7];</span><br><span class="line">			columns[9] = (str2.split(&quot;,&quot;))[8];</span><br><span class="line">			columns[10] = (str2.split(&quot;,&quot;))[9];</span><br><span class="line">			columns[11] = (str2.split(&quot;,&quot;))[10];</span><br><span class="line">			columns[12] = (str2.split(&quot;,&quot;))[11];</span><br><span class="line">		&#125; else</span><br><span class="line">			columns = null;</span><br><span class="line">		return columns;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-<p>####Messages:<br>There are still 13 columns in messages-table:</p>
+<h4 id="Messages"><a href="#Messages" class="headerlink" title="Messages:"></a>Messages:</h4><p>There are still 13 columns in messages-table:</p>
 <table>
 <thead>
 <tr>
@@ -366,7 +359,7 @@ Replies2010-2014 contai">
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public static int[] countStr(String str1, String str2) &#123;</span><br><span class="line">		int count = 0;</span><br><span class="line">		int location = 0;</span><br><span class="line">		for (int z = 0; z &lt;= str1.length() - str2.length(); z++) &#123;</span><br><span class="line">			if ((str1.substring(z, z + str2.length())).equals(str2)) &#123;</span><br><span class="line">				count++;</span><br><span class="line">				location = z + str2.length();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		int[] a = &#123; count, location &#125;;</span><br><span class="line">		return a;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 <p><code>str1</code>is the line and <code>str2</code>is the special symbol.<br>In order to seprate each columns,we can seprate one record into 2 parts.One part contains<code>messageid``messageauthor``messagetitle``messagebody</code> and storage in one string,another one contains the last 9 columns as well as storage in another string.And split them with<code>,</code>.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">public static String[] Columns(String record) &#123;</span><br><span class="line">		String str1, str2;</span><br><span class="line">		String[] columns = new String[13];</span><br><span class="line">		int[] indexs = EachStr(record, SpecCode);</span><br><span class="line">		str1 = record.substring(0, indexs[5] + SpecCode.length());</span><br><span class="line">		str2 = record.substring(indexs[5] + SpecCode.length());</span><br><span class="line"></span><br><span class="line">		if (str1.substring(0, indexs[0] - 1).equals((str1.split(&quot;,&quot;)[0]))</span><br><span class="line">				&amp;&amp; indexs[6] == 0 &amp;&amp; (str2.split(&quot;,&quot;)).length == 10) &#123;</span><br><span class="line">			columns[0] = str1.substring(0, indexs[0] - 1);</span><br><span class="line">			columns[1] = str1.substring(indexs[0] + SpecCode.length(),</span><br><span class="line">					indexs[1]);</span><br><span class="line">			columns[2] = str1.substring(indexs[2] + SpecCode.length(),</span><br><span class="line">					indexs[3]);</span><br><span class="line">			columns[3] = str1.substring(indexs[4] + SpecCode.length(),</span><br><span class="line">					indexs[5]);</span><br><span class="line">			columns[4] = (str2.split(&quot;,&quot;))[1];</span><br><span class="line">			columns[5] = (str2.split(&quot;,&quot;))[2];</span><br><span class="line">			columns[6] = (str2.split(&quot;,&quot;))[3];</span><br><span class="line">			columns[7] = (str2.split(&quot;,&quot;))[4];</span><br><span class="line">			columns[8] = (str2.split(&quot;,&quot;))[5];</span><br><span class="line">			columns[9] = (str2.split(&quot;,&quot;))[6];</span><br><span class="line">			columns[10] = (str2.split(&quot;,&quot;))[7];</span><br><span class="line">			columns[11] = (str2.split(&quot;,&quot;))[8];</span><br><span class="line">			columns[12] = (str2.split(&quot;,&quot;))[9];</span><br><span class="line">		&#125; else</span><br><span class="line">			columns = null;</span><br><span class="line">		return columns;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-<p>####Replies:<br>There are only 8 columns in messages-table:</p>
+<h4 id="Replies"><a href="#Replies" class="headerlink" title="Replies:"></a>Replies:</h4><p>There are only 8 columns in messages-table:</p>
 <table>
 <thead>
 <tr>
@@ -388,13 +381,14 @@ Replies2010-2014 contai">
 </table>
 <p>It is same as the messages-table.</p>
 <hr>
-<p>###Check the foreign key and Insert Into the Table<br>Even if there is a function to constain the foreign key through establish the foreign key’s indexes in a table,after testing connection,if there are several foreign keys in one table,it would be very slow to insert one record because it need select all the primary key in another table.So we decided to use the method-insert first then check the foreign key.</p>
+<h3 id="Check-the-foreign-key-and-Insert-Into-the-Table"><a href="#Check-the-foreign-key-and-Insert-Into-the-Table" class="headerlink" title="Check the foreign key and Insert Into the Table"></a>Check the foreign key and Insert Into the Table</h3><p>Even if there is a function to constain the foreign key through establish the foreign key’s indexes in a table,after testing connection,if there are several foreign keys in one table,it would be very slow to insert one record because it need select all the primary key in another table.So we decided to use the method-insert first then check the foreign key.</p>
 <p>The code of checking foreign key:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">public static void checkFK(Connection conn, String fkstr, int fkid, int type)</span><br><span class="line">			throws SQLException &#123;</span><br><span class="line">		ResultSet rs = null;</span><br><span class="line"></span><br><span class="line">		String sql1s = &quot;select * from messages_2010_2014 where messageid=&apos;&quot;</span><br><span class="line">				+ fkid + &quot;&apos;&quot;;</span><br><span class="line">		String sql1i = &quot;insert into messages_2010_2014(messageid) values(?)&quot;;</span><br><span class="line">		String sql2s = &quot;select * from status where idstatus=&apos;&quot; + fkstr + &quot;&apos;&quot;;</span><br><span class="line">		String sql2i = &quot;insert into status(idstatus) values(?)&quot;;</span><br><span class="line">		String sql3s = &quot;select * from iuser_2010_2014 where id_key=&apos;&quot; + fkid</span><br><span class="line">				+ &quot;&apos;&quot;;</span><br><span class="line">		String sql3i = &quot;insert into iuser_2010_2014(id_key) values(?)&quot;;</span><br><span class="line"></span><br><span class="line">		Statement stmt = (Statement) conn.createStatement();</span><br><span class="line">		try &#123;</span><br><span class="line">			switch (type) &#123;</span><br><span class="line">			case 0:</span><br><span class="line">				rs = stmt.executeQuery(sql1s);</span><br><span class="line">				if (!rs.next()) &#123;</span><br><span class="line">					PreparedStatement pstmt = conn.prepareStatement(sql1i);</span><br><span class="line">					pstmt.setInt(1, fkid);</span><br><span class="line">					pstmt.executeUpdate();</span><br><span class="line">				&#125;</span><br><span class="line">				break;</span><br><span class="line">			case 1:</span><br><span class="line">				rs = stmt.executeQuery(sql2s);</span><br><span class="line">				if (!rs.next()) &#123;</span><br><span class="line">					PreparedStatement pstmt = conn.prepareStatement(sql2i);</span><br><span class="line">					pstmt.setString(1, fkstr);</span><br><span class="line">					pstmt.executeUpdate();</span><br><span class="line">				&#125;</span><br><span class="line">				break;</span><br><span class="line">			case 2:</span><br><span class="line">				rs = stmt.executeQuery(sql3s);</span><br><span class="line">				if (!rs.next()) &#123;</span><br><span class="line">					PreparedStatement pstmt = conn.prepareStatement(sql3i);</span><br><span class="line">					pstmt.setInt(1, fkid);</span><br><span class="line">					pstmt.executeUpdate();</span><br><span class="line">				&#125;</span><br><span class="line">				break;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; catch (SQLException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">``` </span><br><span class="line">The function of type is to select to check which foreign key.If there is no record in referenced table,it would insert the new record into the referenced table.</span><br><span class="line"></span><br><span class="line">The code of inserting into table :</span><br></pre></td></tr></table></figure>
-<p>public static void InsertSQL(Connection conn, String[] columns)<br>            throws SQLException {<br>        try {<br>            PreparedStatement pstmt = conn<br>                    .prepareStatement(“insert into replies_2011(x,x,x,x,x,x,x,x) values (?,?,?,?,?,?,?,?)”);<br>            pstmt.setString(1, columns[0]);<br>            pstmt.setString(2, columns[1]);<br>            pstmt.setString(3, columns[2]);<br>            pstmt.setString(4, columns[3]);<br>            if (!Strtoint(columns[4]))<br>                columns[4] = columns[4].substring(1);<br>            pstmt.setInt(5, Integer.parseInt(columns[4]));<br>            pstmt.setInt(6, Integer.parseInt(columns[5]));<br>            pstmt.setString(7, columns[6]);<br>            pstmt.setInt(8, Integer.parseInt(columns[7]));<br>            pstmt.executeUpdate();<br>        } catch (SQLException e) {<br>            e.printStackTrace();<br>        }<br>    }<br><code>``
-If the datatype of columns are</code>int<code>or other type(without</code>String<code>),it would be parse into</code>Integer`.</p>
-<p>##Configure the Developing Environment</p>
-<p>###MyEclipse<br>MyEclipse is a commercially available Java EE and Ajax IDE created and maintained by the company Genuitec, a founding member of the Eclipse Foundation.MyEclipse is built upon the Eclipse platform and integrates both proprietary and open source code[2] into the development environment. </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">public static void checkFK(Connection conn, String fkstr, int fkid, int type)</span><br><span class="line">			throws SQLException &#123;</span><br><span class="line">		ResultSet rs = null;</span><br><span class="line">		String sql1s = &quot;select * from messages_2010_2014 where messageid=&apos;&quot;</span><br><span class="line">				+ fkid + &quot;&apos;&quot;;</span><br><span class="line">		String sql1i = &quot;insert into messages_2010_2014(messageid) values(?)&quot;;</span><br><span class="line">		String sql2s = &quot;select * from status where idstatus=&apos;&quot; + fkstr + &quot;&apos;&quot;;</span><br><span class="line">		String sql2i = &quot;insert into status(idstatus) values(?)&quot;;</span><br><span class="line">		String sql3s = &quot;select * from iuser_2010_2014 where id_key=&apos;&quot; + fkid</span><br><span class="line">				+ &quot;&apos;&quot;;</span><br><span class="line">		String sql3i = &quot;insert into iuser_2010_2014(id_key) values(?)&quot;;</span><br><span class="line">		Statement stmt = (Statement) conn.createStatement();</span><br><span class="line">		try &#123;</span><br><span class="line">			switch (type) &#123;</span><br><span class="line">			case 0:</span><br><span class="line">				rs = stmt.executeQuery(sql1s);</span><br><span class="line">				if (!rs.next()) &#123;</span><br><span class="line">					PreparedStatement pstmt = conn.prepareStatement(sql1i);</span><br><span class="line">					pstmt.setInt(1, fkid);</span><br><span class="line">					pstmt.executeUpdate();</span><br><span class="line">				&#125;</span><br><span class="line">				break;</span><br><span class="line">			case 1:</span><br><span class="line">				rs = stmt.executeQuery(sql2s);</span><br><span class="line">				if (!rs.next()) &#123;</span><br><span class="line">					PreparedStatement pstmt = conn.prepareStatement(sql2i);</span><br><span class="line">					pstmt.setString(1, fkstr);</span><br><span class="line">					pstmt.executeUpdate();</span><br><span class="line">				&#125;</span><br><span class="line">				break;</span><br><span class="line">			case 2:</span><br><span class="line">				rs = stmt.executeQuery(sql3s);</span><br><span class="line">				if (!rs.next()) &#123;</span><br><span class="line">					PreparedStatement pstmt = conn.prepareStatement(sql3i);</span><br><span class="line">					pstmt.setInt(1, fkid);</span><br><span class="line">					pstmt.executeUpdate();</span><br><span class="line">				&#125;</span><br><span class="line">				break;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; catch (SQLException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>The function of type is to select to check which foreign key.If there is no record in referenced table,it would insert the new record into the referenced table.</p>
+<p>The code of inserting into table :</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">public static void InsertSQL(Connection conn, String[] columns)</span><br><span class="line">			throws SQLException &#123;</span><br><span class="line">		try &#123;</span><br><span class="line">			PreparedStatement pstmt = conn</span><br><span class="line">					.prepareStatement(&quot;insert into replies_2011(x,x,x,x,x,x,x,x) values (?,?,?,?,?,?,?,?)&quot;);</span><br><span class="line">			pstmt.setString(1, columns[0]);</span><br><span class="line">			pstmt.setString(2, columns[1]);</span><br><span class="line">			pstmt.setString(3, columns[2]);</span><br><span class="line">			pstmt.setString(4, columns[3]);</span><br><span class="line">			if (!Strtoint(columns[4]))</span><br><span class="line">				columns[4] = columns[4].substring(1);</span><br><span class="line">			pstmt.setInt(5, Integer.parseInt(columns[4]));</span><br><span class="line">			pstmt.setInt(6, Integer.parseInt(columns[5]));</span><br><span class="line">			pstmt.setString(7, columns[6]);</span><br><span class="line">			pstmt.setInt(8, Integer.parseInt(columns[7]));</span><br><span class="line">			pstmt.executeUpdate();</span><br><span class="line">		&#125; catch (SQLException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>If the datatype of columns are <code>int</code> or other type(without<code>String</code>),it would be parse into <code>Integer</code>.</p>
+<h2 id="Configure-the-Developing-Environment"><a href="#Configure-the-Developing-Environment" class="headerlink" title="Configure the Developing Environment"></a>Configure the Developing Environment</h2><h3 id="MyEclipse"><a href="#MyEclipse" class="headerlink" title="MyEclipse"></a>MyEclipse</h3><p>MyEclipse is a commercially available Java EE and Ajax IDE created and maintained by the company Genuitec, a founding member of the Eclipse Foundation.MyEclipse is built upon the Eclipse platform and integrates both proprietary and open source code[2] into the development environment. </p>
 <p>Download Link:<a href="">https://www.genuitec.com/products/myeclipse/download/</a> </p>
 <p><img src="http://img.blog.csdn.net/20160123163710952" alt=""></p>
 <p><em>NOTE:THERE ARE ONLY 30 DAYS TO TRAIL</em>—–DO NOT WORRY,we can use RI to break it.</p>
@@ -408,11 +402,11 @@ If the datatype of columns are</code>int<code>or other type(without</code>String
 <li><p>Run configures:<br>Because the max of JVM is approximately 1/4 RAM,so in order to increase the JVM,it is necessary to set the arguments that avoid the out of<code>JAVA heapsize</code>.<br><img src="http://img.blog.csdn.net/20160123163730547" alt=""></p>
 </li>
 </ol>
-<p>###MySQL<br>MySQL Community Edition is a freely downloadable version of the world’s most popular open source database that is supported by an active community of open source developers and enthusiasts.MySQL Cluster Community Edition is available as a separate download. The reason for this change is so that MySQL Cluster can provide more frequent updates and support using the latest sources of MySQL Cluster Carrier Grade Edition.</p>
+<h3 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h3><p>MySQL Community Edition is a freely downloadable version of the world’s most popular open source database that is supported by an active community of open source developers and enthusiasts.MySQL Cluster Community Edition is available as a separate download. The reason for this change is so that MySQL Cluster can provide more frequent updates and support using the latest sources of MySQL Cluster Carrier Grade Edition.</p>
 <p>Download Link:<a href="">http://dev.mysql.com/downloads/mysql/</a></p>
 <p><img src="http://img.blog.csdn.net/20160123163744047" alt=""></p>
 <p><em>NOTE:When you first install mysql,please remember the password.</em></p>
-<p>###MySQLWorkbench<br>MySQL Workbench provides DBAs and developers an integrated tools environment for:</p>
+<h3 id="MySQLWorkbench"><a href="#MySQLWorkbench" class="headerlink" title="MySQLWorkbench"></a>MySQLWorkbench</h3><p>MySQL Workbench provides DBAs and developers an integrated tools environment for:</p>
 <p>Database Design &amp; Modeling</p>
 <p>SQL Development</p>
 <p>Database Administration</p>
@@ -430,7 +424,7 @@ If the datatype of columns are</code>int<code>or other type(without</code>String
         <p><span>本文标题:</span><a href="/2016/03/05/Big Data Preprocess/"></a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Mengqing Li 的个人博客">Mengqing Li</a></p>
         <p><span>发布时间:</span>2016年03月05日 - 20时31分</p>
-        <p><span>最后更新:</span>2016年03月05日 - 20时36分</p>
+        <p><span>最后更新:</span>2016年03月20日 - 16时38分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/03/05/Big Data Preprocess/" title="">http://sarojay.com/2016/03/05/Big Data Preprocess/</a>
             <span class="copy-path" data-clipboard-text="原文: http://sarojay.com/2016/03/05/Big Data Preprocess/　　作者: Mengqing Li" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -446,6 +440,15 @@ If the datatype of columns are</code>int<code>or other type(without</code>String
 
 <nav id="article-nav">
   
+    <a href="/2016/03/20/githubpage/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
   
     <a href="/2015/12/07/eventrgs/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
@@ -459,7 +462,7 @@ If the datatype of columns are</code>int<code>or other type(without</code>String
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Split-the-big-file"><span class="toc-number">1.</span> <span class="toc-text">Split the big file:</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Forum"><span class="toc-number">1.</span> <span class="toc-text">Forum</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Content"><span class="toc-number">1.1.</span> <span class="toc-text">Content</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Process"><span class="toc-number">1.1.1.</span> <span class="toc-text">Process</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Split-the-big-file"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">Split the big file:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#BufferReader"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">BufferReader:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#JDBC-Connect-MySQL"><span class="toc-number">1.1.1.3.</span> <span class="toc-text">JDBC Connect MySQL</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Grant-Privileges"><span class="toc-number">1.1.1.4.</span> <span class="toc-text">Grant Privileges:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Access-the-database-via-MySQLWorkbench"><span class="toc-number">1.1.2.</span> <span class="toc-text">Access the database via MySQLWorkbench</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Users"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">Users:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Messages"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">Messages:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Replies"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">Replies:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Check-the-foreign-key-and-Insert-Into-the-Table"><span class="toc-number">1.1.3.</span> <span class="toc-text">Check the foreign key and Insert Into the Table</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Configure-the-Developing-Environment"><span class="toc-number">1.2.</span> <span class="toc-text">Configure the Developing Environment</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#MyEclipse"><span class="toc-number">1.2.1.</span> <span class="toc-text">MyEclipse</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MySQL"><span class="toc-number">1.2.2.</span> <span class="toc-text">MySQL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MySQLWorkbench"><span class="toc-number">1.2.3.</span> <span class="toc-text">MySQLWorkbench</span></a></li></ol></li></ol></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -544,7 +547,9 @@ If the datatype of columns are</code>int<code>or other type(without</code>String
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2016/03/20/githubpage/" title="上一篇: ">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
@@ -553,7 +558,7 @@ If the datatype of columns are</code>int<code>or other type(without</code>String
             </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/03/05/Big Data Preprocess/">Big Data Preprocess</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/07/eventrgs/">eventrgs</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/03/23/ssh/">ssh</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/20/githubpage/">githubpage</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/05/Big Data Preprocess/">Big Data Preprocess</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/07/eventrgs/">eventrgs</a></li></ul>
     <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
