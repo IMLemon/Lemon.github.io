@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Lemon WebPage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Fall Detect APP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lemon WebPage">
+<meta property="og:url" content="http://sarojay.com/2016/02/02/falldetect/index.html">
+<meta property="og:site_name" content="Lemon WebPage">
+<meta property="og:description" content="Fall Detect APP">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201604/27/1461730812_7674.png">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201604/27/1461730812_1554.jpg">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201604/27/1461730814_9690.png">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201604/27/1461730813_9367.jpg">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201604/27/1461730838_8676.png">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201604/27/1461730813_5673.jpg">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201604/27/1461730838_1161.jpg">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201604/27/1461730839_1085.jpg">
+<meta property="og:image" content="http://img.my.csdn.net/uploads/201604/27/1461730839_4935.png">
+<meta property="og:updated_time" content="2016-04-27T04:33:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Lemon WebPage">
+<meta name="twitter:description" content="Fall Detect APP">
+<meta name="twitter:image" content="http://img.my.csdn.net/uploads/201604/27/1461730812_7674.png">
+  
+    <link rel="alternative" href="/atom.xml" title="Lemon WebPage" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.jpg">
+  
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/me.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/">Mengqing Li</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">不会吃的程序媛不是一个好柠檬🍋</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="http://sarojay.com">博客首页</a></li>
+                        
+                            <li><a href="/about">我的CV</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=FHlxenNlfXpzOnh9VHJ7bHl1fXg6d3t5" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/IMLemon" title="github">github</a>
+                            
+                                <a class="fl facebook" target="_blank" href="https://www.facebook.com/sarah.li.56884" title="facebook">facebook</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        
+                    </div>
+                </section>
+                
+                
+                
+
+                
+                
+                <section class="switch-part switch-part3">
+                
+                    <div id="js-aboutme">90后天蝎座小女子一枚，爱编程，爱旅游，爱瑜伽，爱折腾，爱购物，爱美妆，爱萌宠，现求coding offer一张。</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Mengqing Li</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/me.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">Mengqing Li</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">不会吃的程序媛不是一个好柠檬🍋</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="http://sarojay.com">博客首页</a></li>
+                
+                    <li><a href="/about">我的CV</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=FHlxenNlfXpzOnh9VHJ7bHl1fXg6d3t5" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/IMLemon" title="github">github</a>
+                    
+                        <a class="facebook" target="_blank" href="https://www.facebook.com/sarah.li.56884" title="facebook">facebook</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-falldetect" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/02/02/falldetect/" class="article-date">
+      <time datetime="2016-02-02T08:07:18.000Z" itemprop="datePublished">2016-02-02</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="Fall-Detect-APP"><a href="#Fall-Detect-APP" class="headerlink" title="Fall Detect APP"></a>Fall Detect APP</h1><p><img src="http://img.my.csdn.net/uploads/201604/27/1461730812_7674.png" alt="APP logo"><br><a id="more"></a></p>
+<p>###Term Project Description</p>
+<p>#####1.    The main theme of the term project is on Fall Detection and Gesture Recognition.</p>
+<p>#####2.    Basic Features (75%) of this project should cover the followings:</p>
+<p>######a.    Fall Detection based on Accelerometer – your application should be able to detect a fall, and should also detect falling down then climbing up and falling down and stay down</p>
+<p>######b.    Gesture Detection based on Gyroscope &amp; Accelerometer – your application should be able to detect the following activity status of the user: i) Standing; ii) Sitting; and iii) Lying on bed;</p>
+<p>#####3.    Extra features (25%) of this project is based on the implementation of services or the realization of ideas from your team</p>
+<p>##Accelerometer<br>Add module named <code>ti.coremotion</code>, there is a file Accelerometer.yml to get the data <code>accelerometer</code>. In <code>home.js</code>, the code means get the data and judge the status which is falling down.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">function startAcc()&#123;</span><br><span class="line">....&#125;</span><br></pre></td></tr></table></figure>
+<p>This function can start get accelerometer.value. Give a flag to judge it and do other relative functions,such as send email include location and telephone to your friend.<br><strong><em>Get the location</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">function geolocationFunction() &#123;</span><br><span class="line">	Ti.Geolocation.purpose = &apos;Get Current Location&apos;;</span><br><span class="line">	if (Ti.Geolocation.locationServicesEnabled) &#123;</span><br><span class="line">		Ti.Geolocation.accuracy = Ti.Geolocation.ACCURACY_BEST;</span><br><span class="line">		Ti.Geolocation.distanceFilter = 10;</span><br><span class="line">		Ti.Geolocation.preferredProvider = Ti.Geolocation.PROVIDER_GPS;</span><br><span class="line">		Ti.Geolocation.addEventListener(&apos;location&apos;, function(e) &#123;</span><br><span class="line">			if (e.error) &#123;</span><br><span class="line">				alert(&apos;Error: &apos; + e.error);</span><br><span class="line">			&#125; else &#123;</span><br><span class="line">				return &quot;https://www.google.com/maps/place//@&quot; + &quot;e.coords.longitude&quot; + &quot;,&quot; + e.coords.latitude + &quot;,17z&quot;;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;);</span><br><span class="line">	&#125; else &#123;</span><br><span class="line">		alert(&apos;Please enable location services&apos;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong><em>Send email</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">function sendEmail(email) &#123;</span><br><span class="line">	var xhr = Ti.Network.createHTTPClient(&#123;&#125;);</span><br><span class="line">	xhr.open(&apos;POST&apos;, &apos;https://51a87baa-8900-44dc-9631-41dca74c86d2:40140a8c-c2a0-4baf-8d04-af115db0b5e4@api.postmarkapp.com/email&apos;);</span><br><span class="line">	xhr.setRequestHeader(&quot;Accept&quot;,  &quot;application/json&quot;);</span><br><span class="line">	xhr.setRequestHeader(&quot;Content-Type&quot;, &quot;application/json&quot;);</span><br><span class="line">	xhr.setRequestHeader(&quot;X-Postmark-Server-Token&quot;, &quot;40140a8c-c2a0-4baf-8d04-af115db0b5e4&quot;);</span><br><span class="line">	</span><br><span class="line">	xhr.send([&#123;</span><br><span class="line">	&quot;From&quot;: &quot;15432548@life.hkbu.edu.hk&quot;,</span><br><span class="line">	&quot;To&quot;: &quot;cinderella917@163.com&quot;,</span><br><span class="line">	&quot;Subject&quot;: &quot;Test&quot;,</span><br><span class="line">	&quot;Tag&quot;: &quot;Alert&quot;,</span><br><span class="line">	&quot;HtmlBody&quot;: &quot;&lt;b&gt;Hello&lt;/b&gt;&quot;,</span><br><span class="line">	&quot;TextBody&quot;: &quot;Hello&quot;</span><br><span class="line">&#125;]);</span><br><span class="line">	xhr.onload = function(e) &#123;</span><br><span class="line">		Ti.API.info(&quot;Received text: &quot; + this.responseText);</span><br><span class="line">	&#125;;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong><em>Send sendSMS</em></strong><br>But the API need pay for the business company, so now we can not send any free SMS.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function sendSMS(phoneNo) &#123;</span><br><span class="line">	var xhr = Ti.Network.createHTTPClient(&#123;&#125;);</span><br><span class="line">	xhr.open(&apos;POST&apos;, &apos;https://&apos; + Aid + &apos;:&apos; + Apwd + &apos;@api.twilio.com/2010-04-01/Accounts/&apos; + Aid + &apos;/Messages.json&apos;);</span><br><span class="line">	xhr.onload = function(e) &#123;</span><br><span class="line">		Ti.API.info(&quot;Received text: &quot; + this.responseText);</span><br><span class="line">	&#125;;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong><em>Phone Call</em></strong><br>Through an API, we can telephone your emergency people to inform his/her you has fallen.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">function phoneCall(phoneNo) &#123;</span><br><span class="line">	var xhr = Ti.Network.createHTTPClient(&#123;&#125;);</span><br><span class="line">	xhr.open(&apos;POST&apos;, &apos;https://&apos; + Aid + &apos;:&apos; + Apwd + &apos;@api.twilio.com/2010-04-01/Accounts/&apos; + Aid + &apos;/Calls.json&apos;);</span><br><span class="line"></span><br><span class="line">	xhr.onload = function(e) &#123;</span><br><span class="line">		Ti.API.info(&quot;Received text: &quot; + this.responseText);</span><br><span class="line">	&#125;;</span><br><span class="line">	xhr.send(&#123;</span><br><span class="line">		&quot;To&quot; : phoneNo,</span><br><span class="line">		&quot;From&quot; : Ano,</span><br><span class="line">		&quot;Url&quot; : &quot;https://demo.twilio.com/welcome/voice/&quot;,</span><br><span class="line">		&quot;Method&quot; : &quot;GET&quot;,</span><br><span class="line">		&quot;FallbackMethod&quot; : &quot;GET&quot;,</span><br><span class="line">		&quot;StatusCallbackMethod&quot; : &quot;GET&quot;,</span><br><span class="line">		&quot;Record&quot; : &quot;false&quot;</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p><strong><em>Connect the sensorTag</em></strong><br><strong><em>Standing:the yellow image is brighter</em></strong><br><strong><em>Sitting:the orange image is brighter</em></strong><br><strong><em>Turn on monitor</em></strong><br><img src="http://img.my.csdn.net/uploads/201604/27/1461730812_1554.jpg" alt="APP"></p>
+<p>##Emergency Contact<br>You can fill your information and someone’s telephone number who need to help you after you fallen.</p>
+<p><img src="http://img.my.csdn.net/uploads/201604/27/1461730814_9690.png" alt="Contact"></p>
+<p>##SensorTag</p>
+<p><strong>Gyroscope</strong> is a device that uses Earth’s gravity to help determine orientation. Its design consists of a freely-rotating disk called a rotor, mounted onto a spinning axis in the center of a larger and more stable wheel. As the axis turns, the rotor remains stationary to indicate the central gravitational pull, and thus which way is “down.”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">if (e.characteristic.uuid == &quot;f000aa81-0451-4000-b000-000000000000&quot;) &#123;</span><br><span class="line">		$.periName.text = &quot;Device name: &quot; + e.peripheral.name;</span><br><span class="line"></span><br><span class="line">		var ecv = e.characteristic.value;</span><br><span class="line"></span><br><span class="line">		//Groscope</span><br><span class="line">		var GxString = ecv.substr(2, 2).concat(ecv.substr(0, 2));</span><br><span class="line">		var GyString = ecv.substr(6, 2).concat(ecv.substr(4, 2));</span><br><span class="line">		var GzString = ecv.substr(11, 2).concat(ecv.substr(9, 2));</span><br><span class="line"></span><br><span class="line">		var GxValue = hexToAcc(GxString);</span><br><span class="line">		var GyValue = hexToAcc(GyString);</span><br><span class="line">		var GzValue = hexToAcc(GzString);</span><br><span class="line"></span><br><span class="line">		if (time == 1) &#123;</span><br><span class="line">			console.log(&quot;time:&quot; + time);</span><br><span class="line">			Gmin = GzValue;</span><br><span class="line">			time += 1;</span><br><span class="line">		&#125; else if (time == 3) &#123;</span><br><span class="line">			console.log(&quot;time:&quot; + time);</span><br><span class="line">			Gmax = GzValue;</span><br><span class="line">			time = 1;</span><br><span class="line">			angle = Math.abs(Gmax - Gmin) * 1147;</span><br><span class="line">			console.log(&quot;angleeeeeeeeeeeeeeeee&quot; + angle);</span><br><span class="line">			if (angle &gt; 90) &#123;</span><br><span class="line">				alert(&quot;sitting 90&quot;);</span><br><span class="line">				console.log(&quot;roll 90 degree&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; else &#123;</span><br><span class="line">			console.log(&quot;time:&quot; + time);</span><br><span class="line">			time += 1;</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Healthkit"><a href="#Healthkit" class="headerlink" title="Healthkit"></a>Healthkit</h2><p>Connect healthkit and add the data from our APP to HealthKit App. After switch the button, showing the interface of Health Access.<br> <img src="http://img.my.csdn.net/uploads/201604/27/1461730813_9367.jpg" alt="healthkit"><br> The type of fallen is different from the other activities.<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type : TiHealthkit.OBJECT_TYPE_NUMBER_OF_TIMES_FALLEN,</span><br></pre></td></tr></table></figure></p>
+<p> <img src="http://img.my.csdn.net/uploads/201604/27/1461730838_8676.png" alt="healthkit"><br> After allow the app access to healthkit, the webview image gif is visible and shows the new image.<br>  <img src="http://img.my.csdn.net/uploads/201604/27/1461730813_5673.jpg" alt="healthkit"></p>
+<h2 id="Notification"><a href="#Notification" class="headerlink" title="Notification"></a>Notification</h2><p>A toast notification is an unobtrusive, pop-up notification that does not block the UI. Use the Titanium.UI.createNotification method.</p>
+<p>######1.First create notification actions</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var acceptAction = Ti.App.iOS.createUserNotificationAction(&#123;</span><br><span class="line">		identifier : &quot;ACCEPT_IDENTIFIER&quot;,</span><br><span class="line">		title : &quot;HELP ME!&quot;,</span><br><span class="line">		activationMode : Ti.App.iOS.USER_NOTIFICATION_ACTIVATION_MODE_BACKGROUND,</span><br><span class="line">		destructive : true,</span><br><span class="line">		authenticationRequired : false</span><br><span class="line">	&#125;);</span><br><span class="line"></span><br><span class="line">	var rejectAction = Ti.App.iOS.createUserNotificationAction(&#123;</span><br><span class="line">		identifier : &quot;REJECT_IDENTIFIER&quot;,</span><br><span class="line">		title : &quot;I&apos;M OK&quot;,</span><br><span class="line">		activationMode : Ti.App.iOS.USER_NOTIFICATION_ACTIVATION_MODE_BACKGROUND,</span><br><span class="line">		destructive : false,</span><br><span class="line">		authenticationRequired : false</span><br><span class="line">	&#125;);</span><br></pre></td></tr></table></figure>
+<p>######2.Then create notification category<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var callContent = Ti.App.iOS.createUserNotificationCategory(&#123;</span><br><span class="line">		identifier : &quot;CALL_CONTENT&quot;,</span><br><span class="line">		actionsForDefaultContext : [acceptAction, rejectAction]</span><br><span class="line">	&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>######3.Register for user notifications and categories. There are three types: badge, alert and sound.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Ti.App.iOS.registerUserNotificationSettings(&#123;</span><br><span class="line">		types : [Ti.App.iOS.USER_NOTIFICATION_TYPE_ALERT, Ti.App.iOS.USER_NOTIFICATION_TYPE_BADGE, Ti.App.iOS.USER_NOTIFICATION_TYPE_SOUND],</span><br><span class="line">		categories : [callContent]</span><br><span class="line">	&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>######4.The last one monitoring in the background<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Ti.App.iOS.addEventListener(&apos;localnotificationaction&apos;, function(e) &#123;</span><br><span class="line">		if (e.category == &quot;CALL_CONTENT&quot; &amp;&amp; e.identifier == &quot;ACCEPT_IDENTIFIER&quot;) &#123;	</span><br><span class="line">			Ti.App.iOS.scheduleLocalNotification(&#123;</span><br><span class="line">				date : new Date(new Date().getTime()),</span><br><span class="line">				badge : &quot;-1&quot;</span><br><span class="line">			&#125;);</span><br><span class="line">			val = 0;</span><br><span class="line">		&#125;</span><br><span class="line">		if (e.category == &quot;CALL_CONTENT&quot; &amp;&amp; e.identifier == &quot;REJECT_IDENTIFIER&quot;) &#123;</span><br><span class="line">			Ti.App.iOS.scheduleLocalNotification(&#123;</span><br><span class="line">				date : new Date(new Date().getTime()),</span><br><span class="line">				badge : &quot;-1&quot;</span><br><span class="line">			&#125;);</span><br><span class="line">			stopTime();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>The following images are the different situations of notificaiton.</p>
+<p><em>The enter UI will ask you whether allow to notificate you</em></p>
+<p> <img src="http://img.my.csdn.net/uploads/201604/27/1461730838_1161.jpg" alt="notification"></p>
+<p> <em>When you lock your iphone</em></p>
+<p> <img src="http://img.my.csdn.net/uploads/201604/27/1461730839_1085.jpg" alt="notification"></p>
+<p> <em>When the monitor is in background</em></p>
+<p> <img src="http://img.my.csdn.net/uploads/201604/27/1461730839_4935.png" alt="notification"></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/02/02/falldetect/"></a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 Mengqing Li 的个人博客">Mengqing Li</a></p>
+        <p><span>发布时间:</span>2016年02月02日 - 16时07分</p>
+        <p><span>最后更新:</span>2016年04月27日 - 12时33分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/02/02/falldetect/" title="">http://sarojay.com/2016/02/02/falldetect/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://sarojay.com/2016/02/02/falldetect/　　作者: Mengqing Li" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2016/03/05/Big Data Preprocess/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/12/07/eventrgs/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Fall-Detect-APP"><span class="toc-number">1.</span> <span class="toc-text">Fall Detect APP</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Healthkit"><span class="toc-number">1.1.</span> <span class="toc-text">Healthkit</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notification"><span class="toc-number">1.2.</span> <span class="toc-text">Notification</span></a></li></ol></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/02/02/falldetect/" data-title="" data-url="http://sarojay.com/2016/02/02/falldetect/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"lemon2822"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/03/05/Big Data Preprocess/" title="上一篇: ">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2015/12/07/eventrgs/" title="下一篇: ">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/03/23/ssh/">ssh</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/20/githubpage/">githubpage</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/05/Big Data Preprocess/">Big Data Preprocess</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/02/falldetect/">falldetect</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/07/eventrgs/">eventrgs</a></li></ul>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2016 Mengqing Li
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >本站到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 21;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+  </div>
+</body>
+</html>
